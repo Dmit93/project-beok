@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Каталог ссылок</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ссылки на страницы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border: 1px solid #cecece;
+            margin: 0 0 -1px 0;
+        }
+
+        td {
+            display: block;
+            height: 100%;
+            padding: 6px 12px;
+        }
+
+        td:nth-child(1) {
+            width: 300px;
+            position: relative;
+        }
+
+        td:nth-child(1)::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background: #cecece;
+        }
+
+        td:nth-child(2) {
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        .validator {
+            display: block;
+            width: 80px;
+        }
+
+        .validator img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ссылки на страницы </h1>
+
+        <h2>Страницы для общего доступа</h2>
+        <table>
+            <tr>
+                <td>Главная страница</td>
+                <td>main.html</td>
+            </tr>
+            <tr>
+                <td>Главная страница (Пустое состояние "Цели")</td>
+                <td>main-2.html</td>
+            </tr>
+            <tr>
+                <td>Info</td>
+                <td>info.html</td>
+            </tr>
+            <tr>
+                <td>Фото</td>
+                <td>photo.html</td>
+            </tr>
+            <tr>
+                <td>Задания прошлых недель</td>
+                <td>tasks-weeks.html</td>
+            </tr>
+            <tr>
+                <td>Мой прогресс</td>
+                <td>my-progress.html</td>
+            </tr>
+            <tr>
+                <td>Все отчеты</td>
+                <td>all-reports.html</td>
+            </tr>
+
+            <tr>
+                <td>Все отчеты (подробно)</td>
+                <td>all-reports-show.html</td>
+            </tr>
+
+            <tr>
+                <td>Еженедельный отчет - анкета</td>
+                <td>week-reports-screen-3.html</td>
+            </tr>
+            <tr>
+                <td>Аккаунт</td>
+                <td>account.html</td>
+            </tr>
+
+            <tr>
+                <td>Регистрационная анкета</td>
+                <td>registation-form.html</td>
+            </tr>
+
+            <tr>
+                <td>Регистрационная анкета (спасибо)</td>
+                <td>registation-form-thanks.html</td>
+            </tr>
+
+            <tr>
+                <td>Стартовая анкета</td>
+                <td>start-form-2.html</td>
+            </tr>
+
+            <tr>
+                <td>Стартовая анкета (упражнения)</td>
+                <td>exercises-page.html</td>
+            </tr>
+        </table>
+
+        <h2>Чаты</h2>
+        <table>
+            <tr>
+                <td>Чат (ученик) - в ожидании</td>
+                <td>chat-student.html</td>
+            </tr>
+
+            <tr>
+                <td>Чат (ученик) - Проверен</td>
+                <td>chat-student-checked.html</td>
+            </tr>
+
+            <tr>
+                <td>Чат (куратор) - со списком всех учеников в мобильной версии</td>
+                <td>chat-curator-message.html</td>
+            </tr>
+
+            <tr>
+                <td>Чат (куратор) - с открытым чатом в мобильнйо версии</td>
+                <td>chat-curator.html</td>
+            </tr>
+
+            <tr>
+                <td>Логин</td>
+                <td>login.html</td>
+            </tr>
+
+
+
+        </table>
+
+        <h2>Гайды</h2>
+        <table>
+            <tr>
+                <td>Экспорт из fatsecret ios</td>
+                <td>guide-export-ios.html</td>
+            </tr>
+            <tr>
+                <td>Экспорт из fatsecret android</td>
+                <td>guide-export-android.html</td>
+            </tr>
+            <tr>
+                <td>Как пользоваться fatsecret</td>
+                <td>guide-fatscreen.html</td>
+            </tr>
+            <tr>
+                <td>Как правильно делать замеры</td>
+                <td>guide-sample.html</td>
+            </tr>
+            <tr>
+                <td>как делать фото</td>
+                <td>guide-photo.html</td>
+            </tr>
+        </table>
+
+        <h2>Модальные окна</h2>
+        <table>
+            <tr>
+                <td>Редактирование отчета</td>
+                <td>main.html#edit-report</td>
+            </tr>
+            <tr>
+                <td>Выбор веса и повторов (упражнения)</td>
+                <td>exercises-page.html#popup-exercisec</td>
+            </tr>
+            <tr>
+                <td>Заполнить вес</td>
+                <td>main.html#alert-report</td>
+            </tr>
+            <tr>
+                <td>Заполнить все поля в анкете</td>
+                <td>start-form.html#alert</td>
+            </tr>
+            <tr>
+                <td>Лоадер</td>
+                <td>main.html#loader</td>
+            </tr>
+            <tr>
+                <td>Утренний вес</td>
+                <td>main.html#weight-today</td>
+            </tr>
+            <tr>
+                <td>Сколько шагов</td>
+                <td>main.html#step-today</td>
+            </tr>
+            <tr>
+                <td>Фотоотчет был сдан</td>
+                <td>photo.html#alert-photo-report</td>
+            </tr>
+            <tr>
+                <td>Вы точно хотите покинуть страницу?</td>
+                <td>week-reports-screen-3.html#not-save</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const trElems = document.querySelectorAll('table tr')
+
+        for (let i = 0; i < trElems.length; i++) {
+            const tr = trElems[i];
+            const trTitle = tr.querySelectorAll('td')[0]
+            const trLink = tr.querySelectorAll('td')[1]
+                // const url = 'https://topverstka.github.io/enrollee/catalog/' + trLink.innerText
+            const url = trLink.innerText
+
+            trTitle.setAttribute('title', trTitle.innerText)
+            trLink.innerHTML = `<a href="${url}">${url}<br></a>`
+
+            // Создание ссылки на валидатор
+            const valid = document.createElement('td')
+            valid.classList.add('validator')
+            valid.innerHTML = `<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ftopverstka.github.io%2FFIGROUP%2F${url}"><img src="https://validator.w3.org/images/w3c.png" alt="Validator" title="Validator"></a>`
+
+            tr.append(valid)
+        }
+    </script>
+</body>
+
+</html>

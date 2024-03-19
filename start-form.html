@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Генератор фавикон - https://realfavicongenerator.net/ -->
+    <title>BeOK</title>
+    <meta name="description" content="BeOK">
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="section-questionnaire">
+            <div class="section-questionnaire--progress" style="--width-line: 70%"></div>
+            <h1 class="hello">Стартовая анкета</h1>
+            <p class="hello-motivation">Внимательно отнесись к заполнению данных, на их основе команда поставит тебе твою первую цель</p>
+            <form action="#" class="section-questionnaire__form">
+                <div class="section-questionnaire__content">
+                    <div class="field-radio-line">
+                        <h2>Цель*</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-1">
+                            <label>Похудение</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-1">
+                            <label>Поддержка</label>
+                        </div>
+                    </div>
+                    <div class="field-radio-line">
+                        <h2>Ты тренируешься?</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-2">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-2">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+                    <div class="field-box">
+                        <div class="field-box__col">
+                            <label>Рост*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                        </div>
+                        <div class="field-box__col">
+                            <label>Вес*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                        </div>
+                    </div>
+                    <a href="" class="take-photo__container--link">
+                        Гайд по замерам
+                        <span class="take-photo__container--link-icon">
+                            <svg>
+                                <use xlink:href="./img/icons-sprite.svg#arr-right-link"></use>
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="field-box">
+                        <div class="field-box__col">
+                            <label>Обхват шеи*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                            <p class="field-box__col--description">Измеряется в самом тонком месте (под кадыком, выше основания шеи), в см</p>
+                        </div>
+                        <div class="field-box__col">
+                            <label>Обхват талии*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                            <p class="field-box__col--description">Измеряется в самом широком месте (обычно на уровне пупка), в см</p>
+                        </div>
+                        <div class="field-box__col">
+                            <label>Обхват бёдер*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                            <p class="field-box__col--description">Измеряется в самом широком месте (обычно на уровне пупка), в см</p>
+                        </div>
+                    </div>
+                    <div class="field-radio">
+                        <h2>Характер работы/активность*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сидячая работа (офисная работа, водители</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сидячая работа (или её отсутствие) + большое количество бытовых дел (домохозяйки, мамы с детьми)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сидячая работа (или её отсутствие) + большое количество бытовых дел (домохозяйки, мамы с детьми)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Активная работа, весь день на ногах в движении (тренер, курьер, торговые представители)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Тяжёлый физический труд (строители, грузчики, и т.д.)</p>
+                        </div>
+                    </div>
+                    <div class="field-radio-line">
+                        <h2>Была ли ты в детстве/юности полным ребёнком?* </h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-3">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-3">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+                    <div class="field-radio">
+                        <h2>Прошлый опыт похудения</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Минимальный или отсутствует</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Большой опыт диет и откатов</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Большой опыт «весогонок» ввиду спортивного прошлого или настоящего</p>
+                        </div>
+                    </div>
+                    <div class="field-radio">
+                        <h2>Уровень стресса</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Без стрессов (жизнь прекрасна)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Редко, по случаю</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Средний (работа с дедлайнами и с другими людьми)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Высокий (руководящая должность, высокая ответственность , жесткий график)</p>
+                        </div>
+                    </div>
+
+
+                    <div class="field-range">
+                        <h2>Среднее количество сна в будние дни</h2>
+                        <div class="field-range__slide">
+
+                            <span class="field-range__slide--min"></span>
+                            <span class="field-range__slide--max"></span>
+                            <input class="field-range__slide--input" type="range" min="1" max="24" step="1" value="7">
+                            <span class="field-range__slide--number"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="field-radio">
+                        <h2>Выбери свой тип питания</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Омнивор (всеядный)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Вегетарианец и его разновидности (ово-, лактоово- , пескетарианство)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Веган (только растительные продукты)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Кето (отказ от углеводов) только белки и жиры </p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Другое </p>
+                        </div>
+                    </div>
+
+                    <div class="field-radio-line">
+                        <h2>Есть ли у тебя ДИАГНОСТИРОВАННЫЕ острые или хронические заболевания?</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-4">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-4">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+
+                    <div class="field-radio-line">
+                        <h2>Принимаешь ли ты гормональные или другие сильнодействующие препараты?</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-5">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-5">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+
+                    <div class="field-radio-line">
+                        <h2>Беременна ли ты сейчас?</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-6">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-6">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+
+
+                    <div class="field-radio-line">
+                        <h2>В настоящее время ты кормишь грудью?</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-7">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-7">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Отправить" class="reports-submit">
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <!-- Модальные окна -->
+    <div class="modal" id="alert">
+        <div class="modal__body">
+            <div class="modal__content">
+                <div class="modal__icon">
+                    <img src="./img/icon-svg/hand.svg" alt="">
+                </div>
+                <h2 class="modal__title">Пожалуйста, заполни<br> все поля в анкете</h2>
+
+                <button class="modal__close btn">
+					Ок
+				</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Подключение скриптов -->
+    <script src="./js/libs/swiper-bundle.min.js"></script>
+
+    <script src="./js/libs/lightGallary/lightgallery.min.js"></script>
+    <script src="./js/libs/lightGallary/lg-thumbnails.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- <script src="./js/libs/confeti.js"></script> -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        //lightGallery(document.querySelector('.lightgallery'));
+    </script>
+
+
+
+
+</body>
+
+</html>

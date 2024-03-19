@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Генератор фавикон - https://realfavicongenerator.net/ -->
+    <title>BeOK</title>
+    <meta name="description" content="BeOK">
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="general-menu">
+            <div class="general-menu__logo">
+                <a href="/">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+            </div>
+
+            <nav class="general-menu__nav">
+                <ul class="general-menu__nav-list">
+                    <li class="general-menu__nav-elem">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons-sprite.svg#home"></use>
+                            </svg> Главная
+                        </a>
+                    </li>
+                    <li class="general-menu__nav-elem _active-menu">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons-sprite.svg#star"></use>
+                            </svg> Прогресс
+                        </a>
+                    </li>
+                    <li class="general-menu__nav-elem">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons-sprite.svg#blank"></use>
+                            </svg> Отчеты
+                        </a>
+                    </li>
+                    <li class="general-menu__nav-elem">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons-sprite.svg#dialog"></use>
+                            </svg> Чат
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="general-menu__support">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="./img/icons-sprite.svg#support"></use>
+                    </svg> Техподдержка
+                </a>
+            </div>
+        </div>
+
+
+        <div class="page-content content--page">
+            <div class="header">
+                <div class="wrap header__wrap">
+                    <div class="header__logo">
+                        <img src="./img/header-logo.svg" alt="">
+                    </div>
+
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-elem">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#info"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="header__nav-elem">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#bell"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="header__nav-elem">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="header__nav-elem">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#user"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="header__nav--mobile">
+                        <ul class="header__nav-list--mobile">
+                            <li class="header__nav-elem--mobile">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#info"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__nav-elem--mobile header__nav-elem--mobile--logo">
+                                <a href="#">
+                                    <img src="./img/logo-mobile.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__nav-elem--mobile">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#bell-mobile"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__nav-elem--mobile">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#vk-mobile"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__nav-elem--mobile">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./img/icons-sprite.svg#user-mobile"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <h1 class="hello">Мой прогресс</h1>
+
+            <div class="section-progress">
+                <svg viewbox="0 0 0 0" style="height:0; width: 0;position:absolute;opacity:0">
+                <defs>
+                    <linearGradient x1="0" y1="0" x2="0" y2="1" id="linear-gradient-down">
+                        <stop offset="0" stop-color="#ED6A53" stop-opacity="1"></stop>
+                        <stop offset="92%" stop-color="#ED6A53" stop-opacity=".3"></stop>
+                        <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".3"></stop>
+                    </linearGradient>
+                    <linearGradient x1="0" y1="0" x2="0" y2="1" id="linear-gradient-up">
+                        <stop offset="0" stop-color="#2CA869" stop-opacity="1"></stop>
+                        <stop offset="92%" stop-color="#2CA869" stop-opacity=".3"></stop>
+                        <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".3"></stop>
+                    </linearGradient>
+
+                </defs>
+              </svg>
+                <div class="line-chart line-chart__area" data-down>
+                    <div class="line-chart__top">
+                        <h2 class="line-chart__top-title">Результат от старта курса</h2>
+                        <div class="line-chart__right">
+                            <div class="line-chart__top--dropdown">
+                                <div class="line-chart__top--dropdown--select-text">
+                                    <p class="line-chart__top--dropdown--select-p">
+                                        Вес
+                                    </p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                </div>
+                                <ul class="line-chart__top--dropdown-list">
+                                    <li class="line-chart__top--dropdown-element _active">Вес</li>
+                                    <li class="line-chart__top--dropdown-element">Объемы</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-chart__weight">
+                        <span class="line-chart__weight-number">-11</span>
+                        <p class="line-chart__weight-text">кг</p>
+                    </div>
+                    <div class="chart-tabs-section">
+                        <div class="ct-chart section-chart"></div>
+                    </div>
+                    <p class="line-chart__area--text">На старте</p>
+                </div>
+
+                <div class="line-chart line-chart__area" data-up>
+                    <div class="line-chart__top">
+                        <h2 class="line-chart__top-title">Результат от старта курса</h2>
+                        <div class="line-chart__right">
+                            <div class="line-chart__top--dropdown">
+                                <div class="line-chart__top--dropdown--select-text">
+                                    <p class="line-chart__top--dropdown--select-p">
+                                        Вес
+                                    </p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                </div>
+                                <ul class="line-chart__top--dropdown-list">
+                                    <li class="line-chart__top--dropdown-element _active">Вес</li>
+                                    <li class="line-chart__top--dropdown-element">Объемы</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-chart__weight">
+                        <span class="line-chart__weight-number">-11</span>
+                        <p class="line-chart__weight-text">кг</p>
+                    </div>
+                    <div class="chart-tabs-section">
+                        <div class="ct-chart-up section-chart"></div>
+                    </div>
+                    <p class="line-chart__area--text">На старте</p>
+                </div>
+
+                <div class="line-chart" data-chard-parent data-value="кг">
+                    <div class="line-chart__top">
+                        <h2 class="line-chart__top-title">Вес</h2>
+                        <div class="line-chart__top--dropdown">
+                            <div class="line-chart__top--dropdown--select-text">
+                                <p class="line-chart__top--dropdown--select-p">
+                                    Эта неделя
+                                </p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                            <ul class="line-chart__top--dropdown-list">
+                                <li class="line-chart__top--dropdown-element _active" data-chart-tab="weeks">Эта неделя</li>
+                                <li class="line-chart__top--dropdown-element" data-chart-tab="month">Месяц</li>
+                                <li class="line-chart__top--dropdown-element" data-chart-tab="all-course">Весь курс</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chart-tabs-section">
+                        <div class="ct-chart__container chart-tab _show" data-chart-body="weeks">
+                            <div class="ct-chart-2__weeks ct-chart-all section-chart"></div>
+                        </div>
+                        <div class="ct-chart__container chart-tab" data-chart-body="month">
+                            <div class="ct-chart-2 ct-chart-all section-chart"></div>
+                        </div>
+                        <div class="ct-chart__container chart-tab" data-chart-body="all-course">
+                            <div class="ct-chart-3 section-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line-chart" data-chard-parent data-value="см">
+                    <div class="line-chart__top">
+                        <h2 class="line-chart__top-title">Объемы</h2>
+                        <div class="line-chart__right">
+                            <div class="line-chart__top--dropdown">
+                                <div class="line-chart__top--dropdown--select-text">
+                                    <p class="line-chart__top--dropdown--select-p">
+                                        Шея
+                                    </p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                </div>
+                                <ul class="line-chart__top--dropdown-list">
+                                    <li class="line-chart__top--dropdown-element _active">Шея</li>
+                                    <li class="line-chart__top--dropdown-element">Талия</li>
+                                    <li class="line-chart__top--dropdown-element">Бедра</li>
+                                </ul>
+                            </div>
+                            <div class="line-chart__top--dropdown">
+                                <div class="line-chart__top--dropdown--select-text">
+                                    <p class="line-chart__top--dropdown--select-p">
+                                        Эта неделя
+                                    </p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                </div>
+                                <ul class="line-chart__top--dropdown-list">
+                                    <li class="line-chart__top--dropdown-element _active" data-chart-tab="weeks">Эта неделя</li>
+                                    <li class="line-chart__top--dropdown-element" data-chart-tab="month">Месяц</li>
+                                    <li class="line-chart__top--dropdown-element" data-chart-tab="all-course">Весь курс</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-tabs-section">
+                        <div class="ct-chart__container chart-tab _show" data-chart-body="weeks">
+                            <div class="ct-chart-4 section-chart"></div>
+                        </div>
+                        <div class="ct-chart__container  chart-tab" data-chart-body="month">
+                            <div class="ct-chart-4__month section-chart"></div>
+                        </div>
+                        <div class="ct-chart__container  chart-tab" data-chart-body="all-course">
+                            <div class="ct-chart-4__all-course section-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="line-chart line-chart__bar" data-chard-parent>
+                    <div class="line-chart__top">
+                        <h2 class="line-chart__top-title">Шаги</h2>
+                        <div class="line-chart__top--dropdown">
+                            <div class="line-chart__top--dropdown--select-text">
+                                <p class="line-chart__top--dropdown--select-p">
+                                    Дни
+                                </p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                            <ul class="line-chart__top--dropdown-list">
+                                <li class="line-chart__top--dropdown-element _active" data-chart-tab="days">Дни</li>
+                                <li class="line-chart__top--dropdown-element" data-chart-tab="weeks">Недели</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chart-tabs-section">
+                        <div class="ct-chart__container chart-tab _show" data-chart-body="days">
+                            <div class="ct-chart-bar--day section-chart ">
+                            </div>
+                        </div>
+                        <div class="ct-chart__container  chart-tab" data-chart-body="weeks">
+                            <div class="ct-chart-bar--weeks section-chart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="line-chart line-chart__result">
+                    <div class="line-chart__top">
+                        <h2 class="line-chart__top-title">Результат от старта курса</h2>
+                        <div class="line-chart__top--dropdown">
+                            <div class="line-chart__top--dropdown--select-text">
+                                <p class="line-chart__top--dropdown--select-p">
+                                    Вес
+                                </p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 7L8 11L12 7" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                            <ul class="line-chart__top--dropdown-list">
+                                <li class="line-chart__top--dropdown-element _active">Вес</li>
+                                <li class="line-chart__top--dropdown-element">Объемы</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="result-line__chart">
+
+                        <div class="result-line__chart--col">
+                            <div class="result-line__chart--col-box">
+                                <svg class="result-line__chart--icon">
+                                <use href="./img/icons-sprite.svg#icon-neck"></use>
+                                </svg>
+                                <h3 class="result-line__chart--title">Шея</h3>
+                            </div>
+
+                            <div class="result-line__chart--col-box">
+                                <h3 class="result-line__chart--title">На старте</h3>
+                                <p class="result-line__chart--text">55 см</p>
+                            </div>
+                            <div class="result-line__chart--col-box">
+                                <h3 class="result-line__chart--title">Результат</h3>
+                                <p class="result-line__chart--text">+5 см</p>
+                            </div>
+                        </div>
+
+                        <div class="result-line__chart--col">
+                            <div class="result-line__chart--col-box">
+                                <svg class="result-line__chart--icon">
+                                <use href="./img/icons-sprite.svg#icon-waist"></use>
+                            </svg>
+                                <h3 class="result-line__chart--title">Талия</h3>
+                            </div>
+                            <div class="result-line__chart--col-box">
+                                <h3 class="result-line__chart--title">На старте</h3>
+                                <p class="result-line__chart--text">55 см</p>
+                            </div>
+                            <div class="result-line__chart--col-box">
+                                <h3 class="result-line__chart--title">Результат</h3>
+                                <p class="result-line__chart--text">+5 см</p>
+                            </div>
+                        </div>
+                        <div class="result-line__chart--col">
+                            <div class="result-line__chart--col-box">
+                                <svg class="result-line__chart--icon">
+                                <use href="./img/icons-sprite.svg#icon-hips"></use>
+                            </svg>
+                                <h3 class="result-line__chart--title">Бедра</h3>
+                            </div>
+
+                            <div class="result-line__chart--col-box">
+                                <h3 class="result-line__chart--title">На старте</h3>
+                                <p class="result-line__chart--text">55 см</p>
+                            </div>
+                            <div class="result-line__chart--col-box">
+                                <h3 class="result-line__chart--title">Результат</h3>
+                                <p class="result-line__chart--text">+5 см</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </main>
+
+
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="./js/libs/chartist-plugin-gradient.js"></script>
+
+    <script src="./js/progress.js"></script>
+
+
+
+
+
+
+
+
+    <!-- Подключение скриптов -->
+    <script src="./js/libs/swiper-bundle.min.js"></script>
+
+    <script src="./js/libs/lightGallary/lightgallery.min.js"></script>
+    <script src="./js/libs/lightGallary/lg-thumbnails.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- <script src="./js/libs/confeti.js"></script> -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        //lightGallery(document.querySelector('.lightgallery'));
+    </script>
+
+
+
+
+</body>
+
+</html>

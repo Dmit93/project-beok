@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Генератор фавикон - https://realfavicongenerator.net/ -->
+    <title>BeOK</title>
+    <meta name="description" content="BeOK">
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="section-questionnaire section-reports-screen" data-custom>
+
+            <a class="link-pref-page" href="#">
+                <svg class="">
+                    <use href="./img/icons-sprite.svg#icon-link-prev-mobile"></use>
+                </svg>
+            </a>
+            <h1 class="hello">Еженедельный отчет</h1>
+            <p class="hello-motivation">Внимательно отнесись к заполнению данных, на их основе команда выдаст тебе рекомендации</p>
+
+            <div class="section-questionnaire--progress" style="--width-line: 0%"></div>
+            <form action="#" class="section-questionnaire__form">
+                <div class="section-questionnaire__content">
+                    <a href="" class="take-photo__container--link">
+                        Гайд по замерам
+                        <span class="take-photo__container--link-icon">
+                            <svg>
+                                <use xlink:href="./img/icons-sprite.svg#arr-right-link"></use>
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="field-box" data-required>
+                        <div class="field-box__col">
+                            <label>Обхват шеи*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                            <p class="field-box__col--description">Измеряется в самом тонком месте (под кадыком, выше основания шеи), в см</p>
+                        </div>
+                        <div class="field-box__col">
+                            <label>Обхват талии*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                            <p class="field-box__col--description">Измеряется в самом широком месте (обычно на уровне пупка), в см</p>
+                        </div>
+                        <div class="field-box__col">
+                            <label>Обхват бёдер*</label>
+                            <input type="text" data-number inputmode="decimal" class="field-box__col--input">
+                            <p class="field-box__col--description">Измеряется в самом широком месте (обычно на уровне пупка), в см</p>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Оцени свой уровень голода (за прошедшую неделю)*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Слишком сытно, я никогда так много не ел</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сытно, нет проблем</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сытно, но не хватает вкусняшек</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Голодно, справляюсь с трудом</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Слишком голодно, постоянно думаю о еде, на грани срыва</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-1" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Постоянно срываюсь</p>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Оцени свои тренировки (за прошедшую неделю)*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Не было силовых тренировок на этой неделе</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Комфортно, без изменений</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Спрогрессировал и восстановился</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Не спрогрессировал (или не было такой задачи), но восстановился</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Откатил, и не восстановился</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-2" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Нет желания тренироваться, тяжело</p>
+                        </div>
+                    </div>
+                    <div class="field-text">
+                        <h2>Мы видим, что ты начал тренироваться, это круто!</h2>
+                        <div class="field-text__input" data-type="search">
+                            <input type="button" value="Упражнения">
+                        </div>
+                        <p class="field-text__description">Выбери минимум 2 упражнения из списка (чем больше, тем лучше),<br> затем впиши вес снаряда и количество повторов с указанным весом за один подход</p>
+                        <div class="field-text__selected--box">
+                            <div class="field-text__selected">
+                                <p class="field-text__selected--title">Подъем гантелей на бицепс</p>
+                                <div class="field-text__selected--container">
+                                    <div class="field-text__selected--box">
+                                        <p class="field-text__selected--box-text">Вес</p>
+                                        <span class="field-text__selected--box--count">100</span>
+                                    </div>
+                                    <div class="field-text__selected--box">
+                                        <p class="field-text__selected--box-text">Повторы</p>
+                                        <span class="field-text__selected--box--count">100</span>
+                                    </div>
+                                </div>
+                                <div class="field-text__selected--btn-box">
+                                    <button class="field-text__selected--edit">
+                                        <svg>
+                                            <use xlink:href="./img/icons-sprite.svg#edit-icon"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="field-text__selected--delete">
+                                        <svg>
+                                            <use xlink:href="./img/icons-sprite.svg#icon-esc"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="field-text__selected">
+                                <p class="field-text__selected--title">Приседания со штангой на плечах</p>
+                                <div class="field-text__selected--container">
+                                    <div class="field-text__selected--box">
+                                        <p class="field-text__selected--box-text">Вес</p>
+                                        <span class="field-text__selected--box--count">100</span>
+                                    </div>
+                                    <div class="field-text__selected--box">
+                                        <p class="field-text__selected--box-text">Повторы</p>
+                                        <span class="field-text__selected--box--count">100</span>
+                                    </div>
+                                </div>
+                                <div class="field-text__selected--btn-box">
+                                    <button class="field-text__selected--edit">
+                                        <svg>
+                                            <use xlink:href="./img/icons-sprite.svg#edit-icon"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="field-text__selected--delete">
+                                        <svg>
+                                            <use xlink:href="./img/icons-sprite.svg#icon-esc"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="field-text">
+                        <h2>Делал другие упражнения</h2>
+                        <div class="field-text__input">
+                            <input type="text">
+                        </div>
+                        <p class="field-text__description">Впиши сюда свой вариант тренировки, если не нашел в<br> нашем списке подходящие упражнения</p>
+                    </div>
+                    <div class="field-radio-line" data-required>
+                        <h2>Используешь ли ты спортивную фармакологию?<br>Инъекционные/таблетированные препараты тестостерона и его производных?*</h2>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-1">
+                            <label>Да</label>
+                        </div>
+                        <div class="field-radio-line__elemement">
+                            <input type="radio" name="line-1">
+                            <label>Нет</label>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Оцени, как ты соблюдал цель по калориям на прошедшей неделе?*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Соблюдал максимально точно все дни</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Соблюдал точно, но питался вне дома (кафе, рестораны, покупные готовые блюда)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Соблюдал большую часть недели</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-3" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Не соблюдал большую часть недели</p>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Оцени качество своего сна (за прошедшую неделю)* </h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сон 7-9 часов в среднем в будние дни, высыпаюсь</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сон 7-9 часов, но качество сна плохое (часто просыпаюсь, сложно уснуть, сложно проснуться)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сон 5-6 часов в среднем в будние дни, но мне хватает (отсыпаюсь на выходных)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Сон 5-6 часов, не высыпаюсь</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-4" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Режим сна нарушен (ночная работа, бессоница, сплю когда получается)</p>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Оцени свое эмоциональное состояние за прошедшую неделю*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-5" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Все прекрасно, жизнь-кайф</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-5" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Все в рамках нормы, ничего необычного</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-5" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Были небольшие проблемы, но в целом терпимо, я справляюсь</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-5" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Грустно, хочется поплакать</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-5" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Все раздражает, не контролирую свои эмоции, срываюсь</p>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Оцени свое физическое состояние (уровень энергии) за прошедшую неделю*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-6" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Энергии через край, енерджайзер</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-6" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Достаточно энергии, все нормально</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-6" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Чувство усталости, но в целом терпимо</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-6" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Постоянное чувство усталости, ничего не хочется делать, экономлю энергию</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-6" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Хочется все бросить</p>
+                        </div>
+                    </div>
+                    <div class="field-radio" data-required>
+                        <h2>Планируются ли у тебя мероприятия (из перечисленных) на следующей неделе?*</h2>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-7" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Банкеты с застольем (день рождения, свадьбы и тд)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-7" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Поездка в отпуск</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-7" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Командировка</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-7" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Поход, велотур и другой активный отдых на несколько дней</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-7" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Медицинские мероприятия с пребыванием в стационаре (плановые операции)</p>
+                        </div>
+                        <div class="field-radio__line">
+                            <input type="radio" name="field-7" class="field-radio__line--input">
+                            <label></label>
+                            <p class="field-radio__line--text">Никаких планов нет</p>
+                        </div>
+                    </div>
+                    <div class="field-textarea">
+                        <h2>Оставь свой комментарий команде BeOk :)</h2>
+                        <textarea name="comment"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Отправить" class="reports-submit">
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <!-- Модальные окна -->
+    <div class="modal" id="not-save" data-alert-popup>
+        <div class="modal__body">
+            <div class="modal__content">
+                <h2 class="modal__title">Вы точно хотите<br> покинуть страницу?<br> Заполненные данные <br>не будут сохранены</h2>
+
+                <button class="btn btn-prev-page">
+					Да, покинуть страницу
+				</button>
+                <button class="modal__close btn">
+					Остаться
+				</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Подключение скриптов -->
+    <script src="./js/libs/swiper-bundle.min.js"></script>
+
+    <script src="./js/libs/lightGallary/lightgallery.min.js"></script>
+    <script src="./js/libs/lightGallary/lg-thumbnails.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- <script src="./js/libs/confeti.js"></script> -->
+    <script src="./js/main.js"></script>
+
+    <script>
+        //lightGallery(document.querySelector('.lightgallery'));
+    </script>
+
+
+
+
+</body>
+
+</html>
