@@ -1,0 +1,110 @@
+@import '_fonts'; // Шрифты
+@import '_variables'; // Переменные
+@import '_reset'; // Сброс css
+// Миксин для перевода px в vw
+@function vw($px) {
+    @return $px/(1920 / 100vw);
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $ffMain;
+    color: $main;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-feature-settings: "pnum" on, "lnum" on;
+    touch-action: pan-x pan-y;
+    &._lock {
+        padding: 0 calc(var(--scrollbar-width) - (100vw - 100%)) 0 0;
+        overflow: hidden;
+    }
+}
+
+main {
+    display: flex;
+}
+
+.page-content {
+    width: 100%;
+    // overflow-x: hidden;
+    overflow: hidden;
+    padding-left: 15px;
+    @media (max-width: $tablet) {
+        padding: 0 12px;
+        margin-top: 24px;
+        .content--page {
+            margin-top: 60px;
+            .hello {
+                font-family: 'RoadRadio';
+                text-align: left;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: $main;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: $tablet) {
+    .height-vh-mobile {
+        height: inherit;
+    }
+}
+
+@import '_grid'; // Сетка
+@import './header';
+@import './footer';
+// Анимация
+@import './_animation';
+// Компоненты
+@import './components/_buttons';
+@import './components/_forms';
+@import './components/_modal';
+@import './components/cookie';
+@import './components/_general-menu';
+@import './components/_useful-information';
+@import './components/_modal__edit-report';
+@import './components/_pagination';
+@import './components/_chat';
+@import './components/_section-chat';
+@import './components/_loader';
+// Текстовые компоненты
+@import './components/text/_text';
+@import './components/text/_titles';
+// Страницы
+@import './pages/_home-page';
+@import './pages/_photo';
+@import './pages/_tasks-weeks';
+@import './pages/_all-reports';
+@import './pages/_week-report';
+@import './pages/_account';
+@import './pages/_registation-form';
+@import './pages/_my-progress';
+@import './pages/_login';
+@import './pages/_guide';
+// Секции
+@import './sections/_varios-report';
+@import './sections/_your-reports';
+@import './sections/_section-information';
+@import './sections/_stories';
+@import './sections/_check-list';
+// Библиотек
+@import './libs/lightgallery';
+@import './libs/swiper';

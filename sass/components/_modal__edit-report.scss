@@ -1,0 +1,345 @@
+.modal#edit-report,
+.modal#popup-exercisec,
+.modal[data-form] {
+    .modal__content {
+        width: 630px;
+        max-width: 630px;
+    }
+    form {
+        margin-top: 28px
+    }
+    input:not([type="submit"]) {
+        border: 1px solid $main;
+        border-radius: 5px;
+        width: 100%;
+        height: 52px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #1a1a1a
+    }
+    .modal-field {
+        margin-bottom: 23px;
+        label {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 130%;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .modal-field__checkbox {
+            margin-top: 13px
+        }
+        input:not([type="submit"]) {
+            padding: 20px 12px 20px 15px;
+            border: 1px solid $main;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #1A1A1A;
+        }
+    }
+    .modal-field__checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 23px;
+        label {
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+        }
+    }
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 52px;
+        color: #fff;
+        height: 52px;
+        border-radius: 10px;
+    }
+    @media (max-width: $tablet) {
+        z-index: 999999;
+        &._show {
+            overflow-y: auto;
+        }
+        .modal__content {
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            border-radius: 0;
+            padding: 12px 12px 60px 12px
+        }
+        .modal__body {
+            padding: 0;
+            height: 100%
+        }
+        form {
+            margin-top: 17px;
+            display: flex;
+            flex-direction: column;
+            min-height: inherit;
+            height: 100%;
+            padding-bottom: 60px;
+        }
+        .modal__title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 4px;
+        }
+        .edit-report--date {
+            text-align: center;
+            font-size: 12px;
+            line-height: 130%;
+        }
+        .modal-field__checkbox {
+            margin-top: 0;
+        }
+        .modal-field {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            .modal-field {
+                margin-bottom: 0;
+            }
+        }
+        input[type="submit"] {
+            &[disabled] {
+                background: #FFE4DA;
+                color: rgba(232, 86, 51, 0.5);
+            }
+            height: 45px;
+            margin-top: auto;
+            opacity: 1;
+        }
+        .modal__close {
+            left: 12px;
+            top: 11px;
+            right: auto;
+            span {
+                display: none;
+            }
+            &:after {
+                content: '';
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 12H5' stroke='%230E0E0E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 19L5 12L12 5' stroke='%230E0E0E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+                display: block;
+            }
+        }
+    }
+}
+
+.modal[data-form] {
+    .modal__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 26px;
+        font-family: 'RoadRadio';
+    }
+    form {
+        margin-top: 40px;
+    }
+    @media (max-width:$tablet) {
+        .modal__title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            padding-top: 45px;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-height:660px) and (max-width:$tablet) {
+    .modal#edit-report {
+        .modal__body {
+            height: auto;
+        }
+        form {
+            height: auto;
+            padding-bottom: 20px;
+            input[type="submit"] {
+                margin-top: 20px
+            }
+        }
+    }
+}
+
+@media (max-height:400px) and (max-width:$tablet) {
+    .modal#popup-exercisec {
+        form {
+            input[type="submit"] {
+                position: static;
+                width: 100%;
+                margin-top: 20px
+            }
+        }
+        .modal__body {
+            height: auto;
+        }
+    }
+}
+
+.edit-report--date {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.modal-box__diary-container {
+    display: flex;
+    width: calc(100% - 24px);
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+        .modal-box__diary-right {
+            margin: 14px auto 0 0
+        }
+        .modal-box__diary-right--update {
+            text-align: left;
+            line-height: 10px;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.modal-box__diary {
+    display: flex;
+    padding: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    &[data-info="update"] {
+        border: 1px solid $accent;
+        .modal-box__diary-right--btn {
+            background: $accent;
+            position: relative;
+            color: transparent;
+            &:after {
+                content: 'Обновить дневник';
+                color: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+    &[data-info="pass"] {
+        border: 1px solid $outline;
+        .modal-box__diary-right--btn {
+            background: $outline
+        }
+        .modal-box__diary-right--update {
+            opacity: 0;
+        }
+    }
+    svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    @media (max-width: $tablet) {
+        margin-top: 12px;
+        &[data-info="pass"] {
+            .modal-box__diary-right--update {
+                display: none;
+            }
+        }
+        &[data-info="update"] {
+            .modal-box__diary-right--btn {
+                &:after {
+                    content: 'Обновить дневник';
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.modal-box__diary--text {
+    width: 260px
+}
+
+.modal-box__diary--text-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 4px;
+    @media (max-width: $tablet) {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 6px;
+    }
+}
+
+.modal-box__diary--text-description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #90959E;
+    display: flex;
+    @media (max-width: $tablet) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.modal-box__diary-right {
+    margin-left: auto;
+}
+
+.modal-box__diary-right--update {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 4px;
+    color: #90959E;
+    margin-bottom: 18px;
+    text-align: right;
+}
+
+.modal-box__diary-right--btn {
+    width: 190px;
+    height: 40px;
+    border-radius: 5px;
+    background: $accent;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 3;
+    color: #fff;
+    &:hover {
+        background: #64DEA0;
+    }
+    &:active {
+        background: #217E4F
+    }
+    @media (max-width: $tablet) {
+        width: 255px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+
+.modal#loader._show {
+    @media (max-width: $tablet) {
+        z-index: 9999999;
+		}
+}
+.modal#alert-report._show,
+.modal#alert-week._show,
+.modal#alert-by._show {
+    @media (max-width: $tablet) {
+        z-index: 99999999;
+		}
+}
